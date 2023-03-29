@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   viewBox="0 0 20 25"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  
+  <style>
+    @keyframes clouds{
+    0%{transform:translate(0px , 0px);}
+    4.2%{transform:translate(-0.538px , 1.001px);}
+    8.3%{transform:translate(-0.534px , 2.579px);}
+    12.5%{transform:translate(1.63px , 3.307px);}
+    16.7%{transform:translate(4.524px , 2.685px);}
+    20.8%{transform:translate(5.573px , 1.717px);}
+    25%{transform:translate(5.346px , 2.412px);}
+    29.2%{transform:translate(5.555px , 5.274px);}
+    33.3%{transform:translate(4.424px , 8.601px);}
+    37.5%{transform:translate(2.552px , 10.739px);}
+    41.7%{transform:translate(3.071px , 10.238px);}
+    45.8%{transform:translate(6.738px , 5.592px);}
+    50%{transform:translate(7.635px , 3.367px);}
+    54.2%{transform:translate(5.197px , 5.638px);}
+    58.3%{transform:translate(3.287px , 7.251px);}
+    62.5%{transform:translate(0.419px , 7.538px);}
+    66.7%{transform:translate(0.204px , 6.725px);}
+    70.8%{transform:translate(1.885px , 6.306px);}
+    75%{transform:translate(2.503px , 6.586px);}
+    79.2%{transform:translate(3.471px , 6.596px);}
+    83.3%{transform:translate(4.721px , 7.19px);}
+    87.5%{transform:translate(3.729px , 7.492px);}
+    91.7%{transform:translate(1.388px , 6.488px);}
+    95.8%{transform:translate(1.046px , 4.891px);}
+    100%{transform:translate(0);}}
+
+
+
+    @media (prefers-reduced-motion: reduce){
+    use{
+    display:none;
+    }
+    }
+
+    @media (prefers-reduced-motion: no-preference){
+    use{
+    animation: clouds 30s linear infinite;
+    }
+    #cloud0{
+    }
+    #cloud1{
+    animation-delay:-3s;
+    }
+    #cloud2{
+    animation-delay:-20s;
+    }
+    #cloud3{
+    animation-delay:-26s;
+    }
+    #cloud4{
+    animation-delay:-8s;
+    }
+    #cloud5{
+    animation-delay:-13s;
+    }
+    }</style>
+  <defs
+     id="defs8214">
+    <linearGradient
+       
+       id="linearGradient9506">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0.21794869"
+         id="stop9502" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop9504" />
+    </linearGradient>
+    <linearGradient
+       
+       id="linearGradient8649">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0.59090906"
+         id="stop9381" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="1"
+         id="stop8647" />
+    </linearGradient>
+    <radialGradient
+       
+       xlink:href="#linearGradient9506"
+       id="radialGradient8653"
+       cx="10"
+       cy="12.5"
+       fx="10"
+       fy="12.5"
+       r="10"
+       gradientTransform="matrix(1,0,0,1.25,0,-3.125)"
+       gradientUnits="userSpaceOnUse" />
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask9496">
+      <rect
+         style="fill:url(#radialGradient9500);fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linecap:square;stroke-linejoin:bevel"
+         id="rect9498"
+         width="20"
+         height="25"
+         x="0"
+         y="0"
+         />
+    </mask>
+    <radialGradient
+       
+       xlink:href="#linearGradient8649"
+       id="radialGradient9500"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,1.25,0,-3.125)"
+       cx="10"
+       cy="12.5"
+       fx="10"
+       fy="12.5"
+       r="10" />
+    <filter
+       height="3.1765153"
+       y="-1.0882576"
+       width="2.3824983"
+       x="-0.69124914"
+       style="color-interpolation-filters:sRGB;"
+       id="filter323">
+      <feGaussianBlur
+         stdDeviation="8.2596518"
+         result="result8"
+         id="feGaussianBlur305" />
+      <feTurbulence
+         seed="27"
+         result="result7"
+         type="fractalNoise"
+         numOctaves="5"
+         baseFrequency="0.025"
+         id="feTurbulence307" />
+      <feComposite
+         in2="result8"
+         result="result6"
+         operator="over"
+         in="result7"
+         id="feComposite309" />
+      <feColorMatrix
+         result="result9"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -4 "
+         id="feColorMatrix311" />
+      <feDisplacementMap
+         in="result7"
+         in2="result9"
+         xChannelSelector="A"
+         yChannelSelector="A"
+         scale="45"
+         result="result4"
+         id="feDisplacementMap313" />
+      <feComposite
+         in2="result4"
+         result="result2"
+         operator="in"
+         in="result8"
+         id="feComposite315" />
+      <feComposite
+         result="fbSourceGraphic"
+         in="result2"
+         operator="in"
+         in2="result9"
+         id="feComposite317" />
+      <feComposite
+         operator="arithmetic"
+         k2="1"
+         k1="0.5"
+         in="fbSourceGraphic"
+         in2="fbSourceGraphic"
+         result="result91"
+         id="feComposite319" />
+      <feBlend
+         in="fbSourceGraphic"
+         mode="multiply"
+         in2="result91"
+         id="feBlend321" />
+    </filter>
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:10.9124;stroke-linecap:round;filter:url(#filter323)"
+       id="cloud"
+       width="28.677309"
+       height="18.215508"
+       x="0"
+       y="0"
+       transform="scale(0.3 0.3)"/>
+  </defs>
+  <g
+     id="g9482"
+     mask="url(#mask9496)">
+    <rect
+       style="fill:url(#radialGradient8653);fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linecap:square;stroke-linejoin:bevel"
+       id="rect13285"
+       width="20"
+       height="25"
+       x="0"
+       y="0"
+       />
+    <text
+       xml:space="preserve"
+       style="font-weight:900;font-size:19.7556px;font-family:Constantia;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:square;stroke-linejoin:bevel"
+       x="5"
+       y="20"
+       id="text11857">?</text>
+    <use
+       id="cloud0"
+       href="#cloud"
+       x="11"
+       y="0" />
+    <use
+       id="cloud1"
+       href="#cloud"
+       x="9"
+       y="7" />
+    <use
+       id="cloud2"
+       href="#cloud"
+       x="7"
+       y="14" />
+    <use
+       id="cloud3"
+       href="#cloud"
+       x="0"
+       y="3" />
+    <use
+       id="cloud4"
+       href="#cloud"
+       x="0"
+       y="12" />
+    <use
+       id="cloud5"
+       href="#cloud"
+       x="-3"
+       y="1" />
+  </g>
+</svg>

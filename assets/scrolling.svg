@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   viewBox="0 -8 200 182"
+   version="1.1"
+   id="svg358"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  
+  <style>
+    
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+  @media (prefers-reduced-motion: reduce){
+    use{
+      animation:none;
+    }
+    }
+    
+    @media (prefers-reduced-motion: no-preference){
+    #use55802{
+      animation: fade-in-out 5s ease-in-out infinite;
+      animation-delay:-4500ms;
+    }
+    #use55786{
+    opacity:0;
+      animation: fade-in-out 5s ease-in-out infinite;
+      animation-delay:-4000ms;
+    }
+    #use55788{
+      animation: fade-in-out 5s ease-in-out infinite;
+      animation-delay:-3500ms;
+    }
+    #use55790{
+      animation: fade-in-out 5s ease-in-out infinite;
+      animation-delay:-3000ms;
+    }
+    #use55792{
+      animation: fade-in-out 5s ease-in-out infinite;
+      animation-delay:-2500ms;
+    }
+    #use55794{
+      animation: fade-in-out 5s ease-in-out infinite;
+      animation-delay:-2000ms;
+    }
+    #use55796{
+      animation: fade-in-out 5s ease-in-out infinite;
+      animation-delay:-1500ms;
+    }
+    #use55798{
+      animation: fade-in-out 5s ease-in-out infinite;
+      animation-delay:-1000ms;
+    }
+    #use55800{
+      animation: fade-in-out 5s ease-in-out infinite;
+      animation-delay:-500ms;
+    }
+    }
+  </style>
+  <defs
+     id="defs355"><linearGradient
+       id="linearGradient2372"><stop
+         style="stop-color:#9c6b00;stop-opacity:1;"
+         offset="0"
+         id="stop2368" /><stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="1"
+         id="stop2370" /></linearGradient><linearGradient
+       xlink:href="#linearGradient2372"
+       id="linearGradient2374"
+       x1="51.354885"
+       y1="79.04921"
+       x2="182.562"
+       y2="268.29855"
+       gradientUnits="userSpaceOnUse" /><path
+       style="display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:4.55385;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:0.645084"
+       d="M 127.77855,74.585351 98.60796,88.135033 70.087731,74.585351"
+       id="path55758" /></defs><g
+     id="layer1"
+     transform="matrix(0.87795607,0,0,0.87879906,13.94452,-22.619254)"><path
+       style="display:inline;opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 153.73532,93.262456 172.67675,84.856567 153.10618,53.812596 46.166842,55.609909 23.754629,84.824288 42.112418,93.262456 -8.6200526,106.91922 5.728798,79.609221 -10.187716,56.85089 18.193226,48.883711 H 177.65451 l 28.51028,7.967179 -15.91651,22.758331 14.35152,27.309999 z"
+       id="path2434" /><path
+       style="display:inline;fill:url(#linearGradient2374);fill-opacity:1;stroke:#000000;stroke-width:7;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 49.369934,78.364341 c 0,0 27.05794,-17.411971 48.618605,-17.594402 22.190181,-0.187757 49.727821,17.594176 49.727821,17.594176 V 197.6551 L 97.988539,219.15904 49.369392,197.6551 Z"
+       id="path2343" />
+         <use
+       x="0"
+       y="0"
+       href="#path55758"
+       id="use55802" /><path
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:7.00167;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="M 21.674926,81.889541 18.257899,28.603499 c 0,0 14.865648,-7.921397 79.73064,-8.032087 69.857311,-0.11921 79.730641,9.207514 79.730641,9.207514 l -3.41703,52.110615 c 0,0 -42.61019,-5.723071 -76.313611,-5.723071 -33.703423,0 -76.313613,5.723071 -76.313613,5.723071 z"
+       id="path2377" /><path
+       style="display:inline;fill:none;fill-opacity:1;stroke-width:5.49474"
+       d="m 37.515214,55.264779 c 40.960086,-10.605127 79.025086,-10.605127 118.055116,0"
+       id="path22151" /><path
+       id="path22328"
+       style="fill:none;stroke:none;stroke-width:5.49474;stroke-opacity:1"
+       d="m 35.181906,61.344343 c 2.722465,-0.547824 5.822535,-1.058119 9.249424,-1.523984 3.426896,-0.465865 7.180616,-0.887299 11.210403,-1.257402 4.029784,-0.370102 8.33563,-0.688873 12.866775,-0.949411 4.531146,-0.260538 9.287583,-0.462843 14.218553,-0.600013 4.930973,-0.13717 10.036471,-0.209206 15.265735,-0.209206 5.229264,0 10.334784,0.07204 15.265724,0.209206 4.93095,0.13717 9.68739,0.339475 14.21856,0.600013 4.53114,0.260538 8.83697,0.579309 12.86675,0.949411 4.02981,0.370103 7.78352,0.791537 11.21043,1.257402 3.42687,0.465865 6.52695,0.97616 9.24941,1.523984" /><text
+       xml:space="preserve"
+       style="font-weight:900;font-size:21.2513px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';display:inline;fill:none;fill-opacity:1;stroke-width:4.59661"
+       id="text22207"
+       transform="matrix(1,0,0,1.4289533,0,-23.790026)"><textPath
+         xlink:href="#path22328"
+         id="textPath23789"
+         style="stroke-width:4.59661"><tspan
+           id="tspan22205"
+           style="font-size:21.2513px;fill:#000000;fill-opacity:1;stroke-width:4.59661">SCROLLER</tspan></textPath></text>
+         <use
+       x="0"
+       y="14.623847"
+       href="#path55758"
+       id="use55786" />
+         <use
+       x="0"
+       y="29.247694"
+       href="#path55758"
+       id="use55788" />
+         <use
+       x="0"
+       y="43.871541"
+       href="#path55758"
+       id="use55790" />
+         <use
+       x="0"
+       y="58.495388"
+       href="#path55758"
+       id="use55792" />
+         <use
+       x="0"
+       y="73.119235"
+       href="#path55758"
+       id="use55794" />
+         <use
+       x="0"
+       y="87.743082"
+       href="#path55758"
+       id="use55796" />
+         <use
+       x="0"
+       y="102.36693"
+       href="#path55758"
+       id="use55798" />
+         <use
+       x="0"
+       y="116.99078"
+       href="#path55758"
+       id="use55800" /></g></svg>

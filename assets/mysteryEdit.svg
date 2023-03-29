@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg:svg
+   id="svg5"
+   version="1.1"
+   viewBox="38 0 20 25"
+   sodipodi:docname="mysteryEdit.svg"
+   inkscape:export-filename="mysteryEdit.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes clouds{
+    0%{transform:translate(0);}
+    100%{transform:translate(45px,0);}
+    }
+
+
+    @media (prefers-reduced-motion: reduce){
+    #cloud1{
+    animation:  none;
+    }
+    }
+
+    @media (prefers-reduced-motion: no-preference){
+    #cloud1{
+    animation: clouds 10s linear infinite;
+    }
+    }
+  </style>
+  <sodipodi:namedview
+     id="namedview22"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="12.402653"
+     inkscape:cx="11.570105"
+     inkscape:cy="11.046024"
+     inkscape:window-width="1845"
+     inkscape:window-height="1057"
+     inkscape:window-x="1272"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <svg:defs
+     id="defs2">
+    <svg:rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:10.9124;stroke-linecap:round;filter:url(#filter323)"
+       id="cloud"
+       width="28.677309"
+       height="18.215508"
+       x="0"
+       y="0" />
+    <svg:linearGradient
+       id="linearGradient13292">
+      <svg:stop
+         style="stop-color:#0b0800;stop-opacity:1;"
+         offset="0"
+         id="stop13288" />
+      <svg:stop
+         style="stop-color:#0b0800;stop-opacity:1;"
+         offset="0.5"
+         id="stop13296" />
+      <svg:stop
+         style="stop-color:#0b0800;stop-opacity:0;"
+         offset="1"
+         id="stop13290" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       id="linearGradient12416">
+      <svg:stop
+         style="stop-color:#ff0404;stop-opacity:1;"
+         offset="0"
+         id="stop12412" />
+      <svg:stop
+         style="stop-color:#ffff04;stop-opacity:1;"
+         offset="0.2"
+         id="stop12420" />
+      <svg:stop
+         style="stop-color:#04ff04;stop-opacity:1;"
+         offset="0.40000001"
+         id="stop12422" />
+      <svg:stop
+         style="stop-color:#04ffff;stop-opacity:1;"
+         offset="0.59529704"
+         id="stop12424" />
+      <svg:stop
+         style="stop-color:#0404ff;stop-opacity:1;"
+         offset="0.80000001"
+         id="stop12426" />
+      <svg:stop
+         style="stop-color:#ff04ff;stop-opacity:1;"
+         offset="1"
+         id="stop12414" />
+    </svg:linearGradient>
+    <svg:linearGradient
+       xlink:href="#linearGradient12416"
+       id="linearGradient12418"
+       x1="27.619068"
+       y1="11.431543"
+       x2="27.872572"
+       y2="24.893061"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(-23.188672,-6.944482)" />
+    <svg:radialGradient
+       xlink:href="#linearGradient13292"
+       id="radialGradient13294"
+       cx="10"
+       cy="12.5"
+       fx="10"
+       fy="12.5"
+       r="10"
+       gradientTransform="matrix(1,0,0,1.25,-5.588002,-3.125)"
+       gradientUnits="userSpaceOnUse" />
+    <svg:filter
+       inkscape:menu="Textures"
+       inkscape:label="Watercolor"
+       inkscape:menu-tooltip="Cloudy watercolor effect"
+       height="3.1765153"
+       y="-1.0882576"
+       width="2.3824983"
+       x="-0.69124914"
+       style="color-interpolation-filters:sRGB;"
+       id="filter323">
+      <svg:feGaussianBlur
+         stdDeviation="8.2596518"
+         result="result8"
+         id="feGaussianBlur305" />
+      <svg:feTurbulence
+         seed="27"
+         result="result7"
+         type="fractalNoise"
+         numOctaves="5"
+         baseFrequency="0.025"
+         id="feTurbulence307" />
+      <svg:feComposite
+         in2="result8"
+         result="result6"
+         operator="over"
+         in="result7"
+         id="feComposite309" />
+      <svg:feColorMatrix
+         result="result9"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -4 "
+         id="feColorMatrix311" />
+      <svg:feDisplacementMap
+         in="result7"
+         in2="result9"
+         xChannelSelector="A"
+         yChannelSelector="A"
+         scale="45"
+         result="result4"
+         id="feDisplacementMap313" />
+      <svg:feComposite
+         in2="result4"
+         result="result2"
+         operator="in"
+         in="result8"
+         id="feComposite315" />
+      <svg:feComposite
+         result="fbSourceGraphic"
+         in="result2"
+         operator="in"
+         in2="result9"
+         id="feComposite317" />
+      <svg:feComposite
+         operator="arithmetic"
+         k2="1"
+         k1="0.5"
+         in="fbSourceGraphic"
+         in2="fbSourceGraphic"
+         result="result91"
+         id="feComposite319" />
+      <svg:feBlend
+         in="fbSourceGraphic"
+         mode="multiply"
+         in2="result91"
+         id="feBlend321" />
+    </svg:filter>
+  </svg:defs>
+  <svg:g
+     id="layer1"
+     transform="translate(43.588006)">
+    <svg:rect
+       style="fill:url(#radialGradient13294);fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linecap:square;stroke-linejoin:bevel"
+       id="rect13285"
+       width="20"
+       height="25"
+       x="-5.5880022"
+       y="0" />
+    <svg:text
+       xml:space="preserve"
+       style="font-weight:900;font-size:19.7556px;font-family:Arial;-inkscape-font-specification:'Arial Heavy';fill:url(#linearGradient12418);fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linecap:square;stroke-linejoin:bevel"
+       x="0.17848894"
+       y="17.777296"
+       id="text11857"><svg:tspan
+         id="tspan11855"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Constantia;-inkscape-font-specification:'Constantia Bold';fill:url(#linearGradient12418);fill-opacity:1;stroke:none;stroke-width:0.1"
+         x="0.17848894"
+         y="17.777296">?</svg:tspan></svg:text>
+  <svg:use
+    id="cloud1"
+     href="#cloud"
+     x="0"
+     y="0" />
+  </svg:g>
+</svg:svg>

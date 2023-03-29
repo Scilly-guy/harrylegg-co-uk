@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="4.3430328mm"
+   height="3.4352188mm"
+   viewBox="0 0 4.3430328 3.4352188"
+   version="1.1"
+   id="favicon"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  
+  <style
+     id="style1812">
+
+    @keyframes rainbow{
+
+    0% {
+    filter:hue-rotate(0);
+    }
+
+    100% {
+    filter:hue-rotate(1turn);
+    }
+    }
+    path{
+    animation:rainbow 15s linear infinite;
+    will-change:filter;
+    }
+  </style>
+  <defs
+     id="defs2" />
+  <path
+     d="M 2.1499989,3.185219 V 0.25000016 H 2.56341 V 3.185219 Z m 0,0 V 2.7924785 H 4.0930311 V 3.185219 Z"
+     style="fill:none;stroke:#a52639;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round"
+     id="L" />
+  <path
+     d="M 1.7776678,3.185219 V 0.25000016 H 1.9912406 V 3.185219 Z m -1.48828002,0 V 0.25000016 H 0.70279889 V 3.185219 Z M 0.37620411,1.9201811 V 1.5274405 H 1.9147594 v 0.3927406 z"
+     style="fill:none;stroke:#2663a5;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round"
+     id="H"/>
+</svg>

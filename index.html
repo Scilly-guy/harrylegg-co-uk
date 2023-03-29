@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Harry Legg</title>
+    <meta
+      name="description"
+      content="Personal Website of programmer Harry legg."
+    />
+    <meta name="author" content="Harry Legg" />
+
+    <meta property="og:title" content="Harry Legg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.harrylegg.co.uk/index.html" />
+    <meta
+      property="og:description"
+      content="Personal Website of programmer Harry legg."
+    />
+    <meta property="og:image" content="name.svg" />
+
+    <script defer src="swup.umd.js"></script>
+    <script src="swupscrollplugin.umd.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+    <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="print.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="achievements.js" defer></script>
+    <script src="dragables.js" defer></script>
+    <script src="clock.js" defer></script>
+    <script src="resume.js" defer></script>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="resume.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="mono">
+    <div id="swup">
+      <div id="nav" class="transition-fade">
+        <nav class="floatingNav">
+          <div class="leftNav">
+            <form>
+              <fieldset>
+                <legend class="visually-hidden">Pick a Colour Theme</legend>
+                <label class="visually-hidden" for="light">Light Mode</label>
+                <input type="radio" name="theme" id="light" />
+                <label class="visually-hidden" for="dark">Dark Mode</label>
+                <input type="radio" name="theme" id="dark" checked />
+              </fieldset>
+            </form>
+          </div>
+          <div class="rightNav">
+            <div class="transition-fade">
+              <a id="projectslink" href="/resume.html"> Resumé </a>
+              <a id="projectslink" href="#projects" data-no-swup="true">
+                Projects
+              </a>
+              <a id="emaillink" href="#contact" data-no-swup="true">
+                Contact
+              </a>
+            </div>
+            <a
+              id="linkedinlink"
+              target="_blank"
+              href="https://www.linkedin.com/in/harry-legg-scilly/"
+              rel="noopener noreferrer"
+              data-no-swup="true"
+            >
+            </a>
+            <a
+              id="githublink"
+              class="githublink"
+              target="_blank"
+              href="https://github.com/Scilly-guy"
+              rel="noopener noreferrer"
+              data-no-swup="true"
+            >
+            </a>
+          </div>
+        </nav>
+      </div>
+      <main class="transition-swipe-left">
+        <div class="navspace"></div>
+        <section id="welcome" class="screenblock">
+          <div class="breakdown overlay">
+            <div class="title-bar">
+              <h3>Navbar</h3>
+              <button class="minimise os-window-button">&mdash;</button>
+              <button class="close os-window-button">X</button>
+            </div>
+            <p>
+              For my main navbar I decided to use a fixed position so that the
+              options are always available to the user.
+            </p>
+            <p>
+              On the left I have added colour scheme choice buttons, these work
+              by adding a class of light or dark to the html element, each class
+              contains the css variables to effect the theme change. I have
+              utilised local storage to save the prefered theme between site
+              visits, also on the first visit the theme is selected based on the
+              users prefered theme settings, defaulting to dark if they have no
+              preference.
+            </p>
+            <p>
+              The scroll behavior of the Projects and Contact links is dependant
+              on the users &lt;Prefers Reduced Motion&gt; flag, I have tried to
+              respect the reduced motion flag with every animation, please let
+              me know if you think I missed anything.
+            </p>
+          </div>
+          <div class="standard">
+            <h2>
+              Hi! My name is <span class="visually-hidden">Harry Legg</span>
+            </h2>
+            <svg
+              width="500"
+              viewBox="0 0 151.03392 34.996307"
+              version="1.1"
+              id="banner"
+              xml:space="preserve"
+              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+              xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:svg="http://www.w3.org/2000/svg"
+            >
+              <sodipodi:namedview
+                id="namedview7"
+                pagecolor="#ffffff"
+                bordercolor="#000000"
+                borderopacity="0.25"
+                inkscape:showpageshadow="2"
+                inkscape:pageopacity="0.0"
+                inkscape:pagecheckerboard="0"
+                inkscape:deskcolor="#d1d1d1"
+                inkscape:document-units="mm"
+                showgrid="false"
+                showguides="false"
+              />
+              <style>
+                @keyframes rainbow {
+                  0% {
+                    filter: hue-rotate(0);
+                  }
+
+                  100% {
+                    filter: hue-rotate(1turn);
+                  }
+                }
+
+                #banner path {
+                  animation: rainbow 15s linear infinite;
+                  will-change: filter;
+                  fill: var(--welcome-banner-colour);
+                }
+
+                #banner #pathA {
+                  animation-delay: -13500ms;
+                }
+
+                #banner #pathR1 {
+                  animation-delay: -12s;
+                }
+
+                #banner #pathR2 {
+                  animation-delay: -10500ms;
+                }
+
+                #banner #pathY {
+                  animation-delay: -9s;
+                }
+
+                #banner #pathL {
+                  animation-delay: -6s;
+                }
+
+                #banner #pathE {
+                  animation-delay: -4500ms;
+                }
+
+                #banner #pathG1 {
+                  animation-delay: -3s;
+                }
+
+                #banner #pathG2 {
+                  animation-delay: -1500ms;
+                }
+              </style>
+              <g
+                inkscape:label="Layer 1"
+                inkscape:groupmode="layer"
+                id="layer1"
+                style="display: inline"
+                transform="translate(-11.744757,-110.12333)"
+              >
+                <path
+                  style="display: inline; stroke: none; stroke-width: 0.264583"
+                  d="m 159.80833,130.96875 c -0.87111,3.3656 -1.67873,6.73833 -2.73688,10.05416 -0.22286,0.69824 -1.27045,2.93159 -0.10064,3.31761 1.40144,0.46197 1.77961,-2.79162 1.93802,-3.58219 0.74387,-3.71266 1.4511,-7.44958 2.41678,-11.1125 0.23617,-0.89583 1.26262,-2.95077 0.59327,-3.7936 -0.77792,-0.97948 -1.35953,1.29244 -1.50463,1.67693 -0.87241,2.31175 -4.00124,6.46203 -6.95489,4.97951 -4.43634,-2.22668 -2.18339,-10.18008 1.05834,-12.36009 1.38046,-0.92834 3.65175,-1.88081 5.28021,-1.03893 0.77422,0.40026 1.25806,1.34538 2.12198,1.56934 0.90342,0.23421 1.05683,-0.70373 0.6341,-1.29659 -1.64706,-2.31005 -5.66851,-1.77022 -7.77274,-0.6096 -3.78674,2.08865 -6.80168,7.95314 -4.78374,12.19573 2.19402,4.61278 7.0319,2.65216 9.81082,2.2e-4 z"
+                  id="pathG2"
+                />
+                <path
+                  style="display: inline; stroke: none; stroke-width: 0.264583"
+                  d="m 145.25625,131.23333 c -0.3642,1.87796 -0.86312,3.71081 -1.36292,5.55625 -0.28818,1.064 -0.5997,2.12286 -0.9281,3.175 -0.3433,1.09988 -0.97513,2.50349 -0.83416,3.67427 0.16807,1.39621 1.32295,0.53578 1.67548,-0.24659 1.78207,-3.95383 1.8611,-9.01737 2.96698,-13.21726 0.37669,-1.43058 1.95832,-4.40216 -0.19436,-4.7625 -0.43736,2.91999 -4.51366,9.71727 -8.17433,6.76444 -4.50829,-3.63659 -0.42444,-11.98599 4.20558,-13.17773 2.38437,-0.61373 2.80691,0.89638 4.75639,1.60425 0.44082,0.16005 0.95848,0.025 0.99666,-0.51245 0.0719,-1.01142 -1.28371,-1.61977 -2.0491,-1.88555 -2.50163,-0.86865 -5.02938,-0.19045 -7.14332,1.33027 -2.71166,1.95067 -4.50654,5.95326 -4.18088,9.31635 0.30918,3.19273 3.36496,5.80822 6.56192,4.73475 1.41983,-0.47675 2.55577,-1.42857 3.70416,-2.3535 z"
+                  id="pathG1"
+                />
+                <path
+                  style="display: inline; stroke: none; stroke-width: 0.264583"
+                  d="m 121.17917,127.79375 h -0.26459 c -2.6779,8.37486 -9.71962,-1.73326 -15.08125,0.52917 0.83762,-2.17133 1.58933,-4.37603 2.22814,-6.61459 0.40002,-1.40181 0.78462,-2.80929 1.09916,-4.23333 0.36989,-1.67463 0.89932,-3.56658 0.86685,-5.29045 -0.011,-0.58138 -0.37237,-1.69083 -1.15287,-1.12529 -1.0506,0.76129 -0.94797,3.64023 -1.19022,4.82824 -0.81013,3.9733 -2.05219,7.87887 -3.55738,11.64167 -0.51599,1.28997 -2.47084,4.08151 -2.04724,5.4711 0.25545,0.83807 1.31911,0.38709 1.73286,-0.0298 1.26217,-1.27172 1.4763,-3.60704 3.72049,-3.61699 3.89221,-0.0173 10.48393,6.12035 13.1381,0.55671 0.32568,-0.68262 0.44262,-1.37305 0.50795,-2.11645 z"
+                  id="pathL"
+                />
+                <path
+                  style="display: inline; stroke: none; stroke-width: 0.264583"
+                  d="m 26.90733,110.88554 c 0,0 -1.215687,0.15969 -1.572844,0.59112 -0.398589,0.48148 -5.106099,13.24535 -5.106099,13.24535 0,0 -1.531742,0.23612 -4.109606,-0.21084 -2.158455,-0.37424 -4.486916,-1.18731 -4.36978,-1.13644 1.495933,0.64967 2.507133,1.06926 4.393471,1.4289 2.010105,0.38323 3.765959,0.54418 3.765959,0.54418 -1.171337,3.43996 -3.758555,6.9216 -3.768847,10.64802 1.393904,-0.23976 1.641845,-1.47129 2.177706,-2.64583 0.986525,-2.16228 3.430499,-7.97262 3.430499,-7.97262 0,0 1.842163,-0.1969 3.293014,-0.50628 1.91733,-0.57741 4.52267,-1.337 6.244711,-2.2541 -0.845969,3.42893 -2.728003,8.41488 -1.652181,12.05592 1.90553,-0.68332 1.723417,-2.24465 1.927622,-3.96875 0.308531,-2.60496 1.229349,-7.4187 1.592183,-8.4391 1.540651,-1.13787 4.747631,-3.5275 6.197547,-6.37757 0.484982,-0.95366 2.789238,-5.29621 0.805657,-5.72223 -2.386807,-0.51255 -4.885876,3.81051 -5.865231,5.45765 -1.068149,1.79641 -2.272205,4.48443 -2.527213,5.68748 -0.849233,0.64739 -6.70273,3.09762 -9.773228,3.31156 1.465519,-3.80479 3.565869,-9.65638 4.91666,-13.73642 z m 13.309337,-0.0251 c -0.332317,3.78222 -3.19405,8.16197 -6.614584,9.78958 0.569331,-3.30652 3.380846,-8.53593 6.614584,-9.78958 z"
+                  id="pathH"
+                  sodipodi:nodetypes="cscssscccccccscccccccccc"
+                />
+                <path
+                  style="display: inline; stroke: none; stroke-width: 0.264583"
+                  d="m 50.535416,128.5875 h -0.264583 c -2.063406,-2.49666 -5.591572,-3.63506 -8.73125,-3.09925 -2.594768,0.4428 -4.615577,2.4358 -3.854026,5.21591 0.666406,2.43271 3.793199,3.14794 5.970693,3.17397 4.571841,0.0547 11.027251,-0.83661 13.229166,-5.55522 -3.783859,2.55315 -7.515701,5.23174 -12.435416,4.68575 -3.057472,-0.33933 -8.21313,-4.15515 -3.174788,-6.31182 2.50272,-1.07133 4.786418,0.19777 6.878954,1.54461 0.824865,0.53094 2.308278,1.96284 3.383042,1.57157 2.006151,-0.7303 2.172441,-5.40187 1.699763,-7.04636 -1.229069,-4.27617 -5.753391,-5.10509 -9.580721,-4.45933 -1.407239,0.23744 -4.697254,1.73838 -4.277836,3.62619 0.165629,0.74554 1.010787,0.78946 1.531964,0.4038 1.713044,-1.26756 1.940348,-2.87348 4.333372,-3.32464 6.209876,-1.17074 7.508557,5.23584 5.291666,9.57482 z"
+                  id="pathA"
+                />
+                <path
+                  style="display: inline; stroke: none; stroke-width: 0.264583"
+                  d="m 57.292884,125.25374 c 0.478949,-1.38821 0.121699,-7.51416 0.121699,-7.51416 -1.647005,0.53361 -1.126754,2.05139 -1.068758,3.43958 0.107633,2.57477 -0.324934,5.46992 -1.057513,7.9375 -0.476538,1.6052 -1.641731,3.34603 -1.313312,5.02709 2.498407,-0.68787 2.88253,-4.43122 3.450008,-6.61459 1.317704,-5.07005 4.185496,-9.8176 9.779158,-8.99583 -0.584252,-1.8497 -3.028773,-1.7391 -4.233333,-0.72025 -4.377552,3.70266 -6.014442,8.41597 -5.677949,7.44066 z"
+                  id="pathR1"
+                  sodipodi:nodetypes="sccscccss"
+                />
+                <path
+                  style="display: inline; stroke: none; stroke-width: 0.264583"
+                  d="m 80.433333,118.00416 c -1.456002,3.2888 -2.62845,7.50274 -2.645621,11.1125 -0.0057,1.18946 -0.219234,2.9341 0.897863,3.73132 1.336331,0.95371 3.10933,-0.39725 3.972825,-1.3615 2.408264,-2.6892 6.48382,-9.64395 6.638102,-9.44598 0.450654,0.57825 -1.220268,5.32147 -1.875487,7.86842 -3.716676,2.65139 -12.770944,6.28027 -13.043492,12.70149 -0.195871,4.6146 6.173259,1.74176 7.907894,0.2159 2.604373,-2.29129 3.994732,-5.25142 5.237982,-8.41798 0.511678,-1.30326 0.909393,-3.11542 1.336287,-4.4597 2.801365,-2.26743 7.378162,-3.98572 9.829897,-7.18197 l -9.525,6.08542 c 0.473393,-1.48048 0.823833,-2.9782 1.147948,-4.49792 0.188701,-0.88463 1.786784,-6.93724 -0.03164,-6.6354 -0.956654,0.1588 -1.213583,1.85265 -1.746488,2.98629 -0.596003,1.26786 -3.040883,5.77523 -5.042218,8.14703 -0.700326,0.82994 -2.459355,3.31002 -3.778911,2.62297 -1.144164,-0.59576 -0.846085,-2.41347 -0.6545,-3.41672 0.394123,-2.06372 3.959331,-9.01512 1.374563,-10.05417 m 6.614583,12.96459 c -1.033621,4.46786 -3.319092,8.61888 -6.879166,11.55462 -0.84918,0.70035 -3.501787,2.64371 -4.592241,1.51103 -1.015682,-1.05489 0.729933,-3.48165 1.352921,-4.3344 2.441072,-3.34098 6.589652,-6.58267 10.118486,-8.73125 z"
+                  id="pathY"
+                  sodipodi:nodetypes="ccccscscsccccssscccccccc"
+                />
+                <path
+                  style="display: inline; stroke: none; stroke-width: 0.264583"
+                  d="m 126.63662,52.916593 1.32292,0.26458 c 0,1.56406 0.11606,3.28388 1.36702,4.40973 2.85618,2.57056 7.36661,0.20757 9.74548,-1.67571 0.889,-0.70379 1.79623,-1.36244 2.11666,-2.46943 -1.75791,0.50887 -3.33891,2.52515 -5.02708,3.43958 -1.71257,0.92763 -3.90726,1.10673 -5.55625,-0.0882 -1.08844,-0.78872 -1.87596,-2.95023 -0.97015,-4.14514 0.52943,-0.69837 1.76223,-0.9696 2.55765,-1.23473 2.10114,-0.70038 4.20915,-1.31686 6.35,-1.85209 1.14787,-0.28696 3.01686,-0.29194 3.175,-1.67568 -3.98534,0 -7.96147,1.55456 -11.64167,2.91041 0.59989,-3.25657 3.43469,-7.95192 7.14375,-8.15797 1.32734,-0.0737 2.46761,0.97319 3.70417,0.48506 -0.61479,-2.0679 -4.32689,-1.49662 -5.82083,-0.74965 -2.10717,1.05357 -4.11438,2.89095 -5.24756,4.98298 -0.64326,1.18753 -0.91599,2.897 -1.7198,3.96875 -0.50668,0.67556 -1.15648,0.78756 -1.49931,1.5875 z"
+                  id="pathE"
+                  transform="translate(-5.9866224,75.670907)"
+                />
+                <path
+                  style="display: inline; stroke: none; stroke-width: 0.264583"
+                  d="m 68.976464,125.29607 c 0.478949,-1.38821 0.121699,-7.51416 0.121699,-7.51416 -1.647005,0.53361 -1.126754,2.05139 -1.068758,3.43958 0.107633,2.57477 -0.324934,5.46992 -1.057513,7.9375 -0.476538,1.6052 -1.641731,3.34603 -1.313312,5.02709 2.498407,-0.68787 2.88253,-4.43122 3.450008,-6.61459 1.317704,-5.07005 4.185496,-9.8176 9.779158,-8.99583 -0.584252,-1.8497 -3.028773,-1.7391 -4.233333,-0.72025 -4.377552,3.70266 -6.014442,8.41597 -5.677949,7.44066 z"
+                  id="pathR2"
+                  sodipodi:nodetypes="sccscccss"
+                />
+              </g>
+            </svg>
+            <h1>I am a Full Stack and Unity developer.</h1>
+            <p>
+              I want to provide value to your business, learning more each day
+              so I can provide even more value tomorrow.
+            </p>
+          </div>
+          <div class="breakdown overlay2">
+            <div class="title-bar">
+              <h3>Hero Text</h3>
+              <button class="minimise os-window-button">&mdash;</button>
+              <button class="close os-window-button">X</button>
+            </div>
+            <p>
+              I created my Hero text using a caligraphy font which I vectorised
+              and adapted to my liking. I made each letter its own path and
+              setup an animation to rotate the hue, I started the animation
+              staggered using a negative delay, each letter is 1.5s behind the
+              preceeding one. By setting it to 15s for a complete cycle I think
+              the effect is subtle enough not to warrant a &lt;prefers reduced
+              motion&gt; opt out, but encourage you to contact me if you
+              disagree.
+            </p>
+          </div>
+        </section>
+        <section id="skills" class="screenblock">
+          <div class="standard">
+            <h2>Skills</h2>
+            <ul>
+              <li>
+                <img src="assets/html5-icon.svg" />
+                HTML5
+              </li>
+              <li>
+                <img src="assets/css-icon.svg" />
+                CSS3
+              </li>
+              <li>
+                <img src="assets/js_logo.svg" />
+                Javascript
+              </li>
+              <li>
+                <img src="assets/php_logo.svg" />
+                PHP
+              </li>
+              <li>
+                <img src="assets/c--4.svg" />
+                C#
+              </li>
+              <li>
+                <img src="assets/c.svg" />
+                C++
+              </li>
+              <li>
+                <img src="assets/mysql.svg" />
+                MySQL
+              </li>
+              <li>
+                <img src="assets/jquery-icon.svg" />
+                JQuery
+              </li>
+              <li>
+                <img src="assets/unity.svg" />
+                Unity
+              </li>
+              <li>
+                <img src="assets/gimp.svg" />
+                Image Editing
+              </li>
+              <li>
+                <img src="assets/blender.svg" />
+                Blender
+              </li>
+              <li>
+                <img src="assets/laragon.svg" />
+                Laragon
+              </li>
+              <li>
+                <img src="assets/inkscapeLogo.svg" />
+                Inkscape
+              </li>
+              <li class="comingsoon">
+                <img src="assets/React.svg" />
+                React
+              </li>
+              <li class="comingsoon">
+                <img src="assets/typescript.svg" />
+                Typescript
+              </li>
+              <li class="comingsoon">
+                <img src="assets/vite.svg" />
+                Vite
+              </li>
+            </ul>
+            <a href="/resume.html" id="resumelink" data-swup-preload="true"
+              ><img
+                src="assets/resume.PNG"
+                alt="Two sheets of A4 on a wooden table, titled HARRY LEGG"
+            /></a>
+          </div>
+          <div class="breakdown overlay">
+            <div class="title-bar">
+              <h3>Projects Section</h3>
+              <button class="minimise os-window-button">&mdash;</button>
+              <button class="close os-window-button">X</button>
+            </div>
+            <p>
+              I have used a grid to display my skills, I have used a
+              grid-template-columns repeat(auto-fit,minmax(80px, 1fr)) to ensure
+              this displays responsively. In fact I have not used an media
+              queries to achieve the responsiveness of my website.
+            </p>
+            <p>
+              I decided to include React and Typescript but clarify that I am
+              still in the process of learning them. I apply a blur filter to
+              the img child of the comingsoon class, and use a pseudo after
+              element to add the coming soon text which has a text-shadow to
+              increase its legibility. I have also used a greyscale filter to
+              dull down the comingsoon logos.
+            </p>
+            <p>
+              For my Resumé page I decided to recreate my resumé in html and
+              make it look as though it is on two sheets of paper on a wooden
+              desk. The animation I added was one of the most straight forward
+              aspects of the entire site proportionally to its impact. I decided
+              to add the phone, coffee stain and polaroids to enhance the 'desk'
+              effect, notice that the time on the phone is correct
+              (&plusmn;1min) and if you move it around the wifi and mobile
+              signal change. If you are viewing my resumé on a phone it will
+              take up the entire screen width but you may catch a glimpse of a
+              polaroid between the pages, hopefully encouraging you to view it
+              as it was designed to be seen, on a desktop.
+            </p>
+            <p>
+              I wanted to implement a page transition when navigating to my
+              resumé page, I have used SWUP to achieve this. Implementing SWUP
+              lead me to refactor several aspects and was more effort than I
+              feel it was worth but something I am glad to have done as I
+              learned a lot in the process. It also lead me to preload the
+              background (another AI generated seamless texture) to improve the
+              user experience.
+            </p>
+          </div>
+        </section>
+        <section id="projects" class="screenblock resizewaves">
+          <div class="standard">
+            <h2>Projects</h2>
+            <div class="row">
+              <div id="personal-website" class="card">
+                <h3>Personal Website</h3>
+                <img
+                  src="assets/personalwebsite.PNG"
+                  alt="Image of this website"
+                />
+                <p>
+                  My tech stack for this site was Vanilla Javascript, CSS, and
+                  HTML, I used PHP for the backend.
+                </p>
+                <p>
+                  I have not used any templates, I have tried to demonstrate an
+                  understanding of a range of techniques and effects. I recently
+                  added SWUP to my tech stack to include transitions between
+                  pages, I hope to build on these in the future.
+                </p>
+                <button
+                  title="Click here for a break down of this page"
+                  class="breakdownButton"
+                >
+                  Click for more details about this page.
+                </button>
+              </div>
+              <div id="radicalbookreview" class="card">
+                <h3>Radical Book Review</h3>
+                <img
+                  src="assets/radicalbookreview.PNG"
+                  alt="Image of a New York Times Best Seller List App"
+                />
+
+                <p>
+                  This was an app I made for a job interview at Radical. The
+                  challenge was to create CRUD API which provided access to the
+                  New York Times Best Sellers lists and allowed the user to give
+                  the books ratings (or not) and enter them into a database
+                  stored locally.
+                </p>
+                <p>
+                  As an optional extra I chose to create a front end to
+                  demonstrate the API as well but it was also possible to just
+                  run the API and test it with Swagger.
+                </p>
+                <p>
+                  I used EntityFrameworkCore for the database interface and
+                  ASP.NET MVC framework for the frontend. Interactive elements
+                  were handled using jquery and styling was done with Bootstrap.
+                </p>
+                <a
+                  href="https://github.com/Scilly-guy/RadicalBookReview"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="githublink styleable-img-link"
+                  title="View Code"
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <div id="Airbnb React Clone" class="card">
+                <h3>Airbnb Clone React App</h3>
+                <img
+                  src="assets/watercnc.PNG"
+                  alt="Clone of airbnb experiences called watercnc"
+                />
+                <p>
+                  I am in the process of learning React, I am following the
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://scrimba.com/learn/learnreact"
+                    class="in-para"
+                    >Scrimba 12hr React Course</a
+                  >. Where as the course uses interactive screen casts I am
+                  following it on youtube and completing the course in
+                  typescript. I am using Vite build tools and NPM.
+                </p>
+                <p>
+                  This app loads random images from picsum so will appear
+                  different each time you load the page. This is different from
+                  the course version of the project because their hero image was
+                  a single static image where as I have used CSS to recreate the
+                  original design. The data for the cards is stored in an array
+                  to mimic data coming from an api.
+                </p>
+                <a
+                  href="react/index.html"
+                  target="_blank"
+                  title="opens in new tab"
+                  class="try-it-out"
+                  >See it 'live'!</a
+                >
+                <a
+                  href="https://github.com/Scilly-guy/watercnc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="githublink styleable-img-link"
+                  title="View Code"
+                ></a>
+              </div>
+              <div id="bomber-card" class="card">
+                <h3>Unity Top-Down Scroller</h3>
+                <img
+                  src="assets/bomber.PNG"
+                  id="bomber"
+                  alt="Still from top down unity game"
+                />
+                <p>
+                  I haven't yet finished this game to a point I am satisfied to
+                  release it to the world.
+                </p>
+                <p>
+                  It is a recreation of a DOS game from 1993 that I got on a
+                  cover disk all of those moons ago. The original game was
+                  create by Patrick Piche and I have tried to recreate the
+                  atmosphere of the original using a modern game engine. It was
+                  after I started the project that I happened to discover that
+                  Patrick Piche now works for Unity.
+                </p>
+                <p>
+                  I have also created an animal grazing simulation which used a
+                  neural network for the animals to find food and avoid the edge
+                  of the map, this was trained using a genetic algorithm
+                  adjusting the weights randomly each generation. I found neural
+                  networks to be surprisingly straight forward but I am not
+                  interested in persuing AI per se.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="breakdown overlay">
+            <div class="title-bar">
+              <h3>Projects Section</h3>
+              <button class="minimise os-window-button">&mdash;</button>
+              <button class="close os-window-button">X</button>
+            </div>
+            <p>
+              The background for this section was created using a Stable
+              Diffusion Plugin in Blender, this AI image generator can produce
+              borderless textures which can be used for tiled backgrounds. I
+              have then added a Linear gradient on top of the image so it is not
+              so bright in dark mode and not so busy in light mode.
+            </p>
+            <p>
+              The top and bottom of this section are wavy, I achieved this by
+              creating a wave profile SVG which I used to mask the background in
+              a before and after pseudo element of the section element. I sized
+              them so that there are
+              <button id="decreaseWaveCount" class="click-to-change">-</button
+              ><span id="waveCount">5</span
+              ><button id="increaseWaveCount" class="click-to-change">+</button>
+              waves across the windows width.
+            </p>
+            <p>
+              For the cards I have made them clickable so that they transition
+              to absolute positioned elements which migrate to the top of the
+              current scroll location and the width increases to the smaller of
+              the dynamic screen width or a given width. I actually clone the
+              element and hide the original to avoid affecting the layout of the
+              other elements. I wanted to demonstrate an understanding of how to
+              achieve this but if I was doing this again I would utilise an
+              existing library (such as animate.js) for animating elements.
+            </p>
+          </div>
+        </section>
+
+        <section id="testimonials" class="screenblock">
+          <div class="standard">
+            <h2>Client Feedback</h2>
+            <div class="feedback">
+              <p>
+                Harry has been fantastic with transferring my website from one
+                website hosting provider to another. He understood my
+                frustrations with my current site and was able to iron them out
+                on the new one without compromising the layout and look of the
+                site.
+              </p>
+              <p>
+                He was brilliant at talking me through what he was doing and
+                made the technical information much easier to digest for someone
+                who is not IT literate.
+              </p>
+              <p>
+                He kept me posted on how he was doing and what he was doing
+                which is super useful for when I need to make small changes
+                myself. And very proactive to tinker with things to make them
+                work just how I imagined.
+              </p>
+              <p>
+                Super grateful for everything he has done and for his patience.
+              </p>
+              <p>
+                <span>Mouse Sails - </span
+                ><a href="https://mousesails.co.uk" target="_blank"
+                  >Mousesails.co.uk</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="screenblock">
+          <div class="standard">
+            <div class="row">
+              <address>
+                <label for="phonenumber" class="visually-hidden">Phone:</label>
+                <a id="phonenumber" href="tel:01720423364">01720 423364</a>
+                <label for="myemail" class="visually-hidden">Email:</label>
+                <a id="myemail" href="mailto:harry.legg86@googlemail.com"
+                  >harry.legg86@googlemail.com</a
+                >
+                <button id="copyemail" class="copyclick" name="copyemail">
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      id="tick"
+                      class="no-tick"
+                      d="M9.31 14.7L10.81 16.2L14.81 12.2"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 6H14C16 6 16 5 16 4C16 2 15 2 14 2H10C9 2 8 2 8 4C8 6 9 6 10 6Z"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M16 4.02002C19.33 4.20002 21 5.43002 21 10V16C21 20 20 22 15 22H9C4 22 3 20 3 16V10C3 5.44002 4.67 4.20002 8 4.02002"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span class="vcentered">copy email</span>
+                </button>
+              </address>
+              <form>
+                <fieldset>
+                  <legend>Contact Me</legend>
+                  <div class="label-in-input">
+                    <input type="text" id="name" name="name" required />
+                    <label for="name">Name</label><br />
+                  </div>
+                  <div class="label-in-input">
+                    <input type="text" id="email" name="email" required />
+                    <label for="email">Email</label><br />
+                  </div>
+                  <div class="label-in-input">
+                    <textarea id="message" required name="message"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                  <button onsubmit="preventDefault()" id="contactsubmit">
+                    Send
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="breakdown overlay">
+            <div class="title-bar">
+              <h3>Contact section</h3>
+              <button class="minimise os-window-button">&mdash;</button>
+              <button class="close os-window-button">X</button>
+            </div>
+            <p>
+              I used the semantic address element for marking up my contact
+              details, my phone number is a tel link and email address is a
+              mailto link. Personally I prefer not to use mailto links so I also
+              added a button to copy the email address to clipboard using the JS
+              clipboard API, for feedback I toggle the visibility of the tick
+              path on the clipboard icon svg.
+            </p>
+            <p>
+              The contact form sends its contents to a PHP script that uses the
+              PHPMailer library to send the email. I added some CSS transitions
+              to the labels which are positioned absolutely so they appear
+              inside the input fields.
+            </p>
+            <p>
+              This section has a slanted background, I created this effect by
+              adding an absolutely positioned after pseudo element to the
+              section element, I gave it an inset of 0 so that it is the same
+              size and position but then used a skewY transform to get the
+              slanted effect.
+            </p>
+          </div>
+        </section>
+        <section id="achievements" class="screenblock">
+          <div class="standard">
+            <h2>Your Achievements</h2>
+            <p>
+              During your visit to my website you have earned these
+              achievements.
+            </p>
+            <ul class="grid">
+              <li class="uncollected" id="scroller">
+                <img src="assets/scrolling.svg" />
+              </li>
+              <li class="uncollected" id="gamer">
+                <img src="assets/gamer.svg" />
+              </li>
+              <li class="uncollected" id="programmer">
+                <img src="assets/programmer.svg" />
+              </li>
+              <li class="uncollected" id="recruiter">
+                <img src="assets/recruiter.svg" />
+              </li>
+              <li class="uncollected" id="networker">
+                <img src="assets/networker.svg" />
+              </li>
+              <li class="uncollected" id="collector">
+                <img src="assets/collector.svg" />
+              </li>
+              <li class="uncollected" id="curious">
+                <img src="assets/curious.svg" />
+              </li>
+              <li class="uncollected" id="mystery">
+                <img src="assets/mysterymask.svg" />
+              </li>
+            </ul>
+          </div>
+          <div class="breakdown overlay">
+            <div class="title-bar">
+              <h3>Achievements Section</h3>
+              <button class="minimise os-window-button">&mdash;</button>
+              <button class="close os-window-button">X</button>
+            </div>
+            <p>
+              I created these trophies using DALL·E 2 for the original designs
+              (except the mystery trophy which is 100% my own work), which I
+              then vectorised using Inkscape and animated by adding relevant CSS
+              directly to the code. The animation only plays if the user does
+              not have the &lt;prefers reduced motion&gt; flag set. The
+              Programmer trophy was the most complicated due to all of the keys,
+              I was also unable to use a mesh gradient as these aren't yet
+              supported by browsers so I came up with a work around of using 4
+              linear gradients.
+            </p>
+            <img
+              src="assets/trophyoriginals.png"
+              alt="Original trophy designs created using DALL·E 2"
+              title="Original trophy designs created using DALL·E 2"
+            />
+            <p>
+              I setup various event listeners to monitor for the relevant event,
+              scrolling was straight forward, Programmer and Networker both look
+              for pointerDown on the respective links, it would be a breach of
+              privacy to confirm that the user has visited the link. I
+              specifically made it so that even right clicking is considered
+              acceptable to gain the achievement (incase someone right clicks
+              and selects open in new tab/window). The Recruiter achievement
+              requires two actions: visiting my Resumé page and some sort of
+              email interaction (using the copy email address button is enough).
+              The Collector achievement is awarded for collecting the 5
+              preceeding achievements. Which includes the Gamer achievement
+              which currently cannot be achieved as I haven't created a games
+              page yet (check back soon for this). The Inspector achievement is
+              awarded when the browsers inspection window is opened (for at
+              least 2 seconds), I implemented this using Sindre Sorhus' code
+              from GitHub. The final achievement remains a mystery, although
+              anyone who inspects the code can easily achieve this if they work
+              out how.
+            </p>
+            <p>
+              If you hover over each trophy the title text will tell you how
+              many people have achieved this. I wrote a PHP script to store the
+              count for each achievement in a file on the server, this is
+              updated using AJAX when someone achieves a new trophy. I could
+              have used a database but felt that would have been overkill.
+            </p>
+            <p>
+              I added a notification and feedback events when each achievement
+              is awarded, I use fireworks.js and party.js, and randomly choose
+              one of 3 effects for each achievement. Each time an achievement is
+              awarded I reset the timer and update the notification to include
+              the awards that are currently being celebrated, ensuring the last
+              comma is replaced with an '&amp;'. How many can you get at once?
+            </p>
+          </div>
+        </section>
+        <button
+          title="Click here for a break down of this page"
+          class="breakdownButton"
+        >
+          About this page
+        </button>
+      </main>
+    </div>
+    <canvas class="fireworks"></canvas>
+    <div id="notification">
+      <p id="note"></p>
+      <a href="#achievements" data-no-swup="true" id="linktoachievements"
+        >View Achievements</a
+      >
+    </div>
+
+    <footer>
+      <span>&copy; Harry Legg 2023</span>
+    </footer>
+  </body>
+</html>

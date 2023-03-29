@@ -1,0 +1,65 @@
+<?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require_once('phpmailerexception.php');
+require_once('phpmailer.php');
+require_once('phpmailersmtp.php');
+
+$to='harry.legg86@googlemail.com';
+$subject='Email Via harrylegg.co.uk';
+$err=false;
+$msg=['status'=>400,'message'=>'mailer script failed'];
+
+
+
+if(array_key_exists('name',$_POST)){
+  $name=substr(strip_tags($_POST['name']),0,255);
+}
+else
+{
+  $name='';
+}
+
+if(array_key_exists('email',$_POST) && PHPMailer::validateAddress($_POST['email'])){
+  $email=$_POST['email'];
+}
+else
+{
+  $msg=['message'=>'Invalid email address provided'];
+  $err=true;
+}
+
+if(array_key_exists('message',$_POST)){
+  $message=substr(strip_tags($_POST['message']),0,16384);
+}
+else{
+  $msg=['message'=> 'No message provided'];
+  $err=true;
+}
+
+if(!$err){
+  $mail = new PHPMailer();
+  $mail->isSMTP();
+  $mail->Host = 'smtp.gmail.com';
+  $mail->Port = 465;
+  $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+  $mail->SMTPAuth = true;
+  $mail->Username = 'scillyharrylegg@gmail.com';
+  $mail->Password = 'loacxcliaqvpanuz';
+  
+  $mail->CharSet = PHPMailer::CHARSET_UTF8;
+  $mail->setFrom('scillyharrylegg@gmail.com', (empty($name) ? 'Contact form' :$name));
+  $mail->addAddress($to);
+  $mail->addReplyTo($email,$name);
+  $mail->Subject=$subject;
+  $mail->Body=$message;
+  if(!$mail->send()) {
+    $msg = ['message'=>'Mailer Error: '. $mail->ErrorInfo ];
+  }
+  else{
+    $msg = ['status'=>200, 'message'=>'Message Sent'];
+  }
+}
+
+echo json_encode($msg);
