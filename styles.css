@@ -928,7 +928,7 @@ a.try-it-out:hover{
 }
 
 #resumelink::after{
-    content:'Resumé';
+    content:'- CV -';
     position: absolute;
     --font-size:3rem;
     font-size: var(--font-size);
