@@ -178,6 +178,10 @@
 	text-decoration: none;
 }
 
+.a4 li>a{
+	display:inline;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
