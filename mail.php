@@ -39,26 +39,28 @@ else{
 }
 
 if(!$err){
-  $mail = new PHPMailer();
+  $mail = new PHPMailer(true);
+  
+  try{
   $mail->isSMTP();
   $mail->Host = 'smtp.gmail.com';
   $mail->Port = 465;
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
   $mail->SMTPAuth = true;
-  $mail->Username = 'scillyharrylegg@gmail.com';
-  $mail->Password = 'loacxcliaqvpanuz';
+  $mail->Username = 'harryleggscilly@gmail.com';
+  $mail->Password = 'notmypassword';
   
   $mail->CharSet = PHPMailer::CHARSET_UTF8;
-  $mail->setFrom('scillyharrylegg@gmail.com', (empty($name) ? 'Contact form' :$name));
+  $mail->setFrom('harryleggscilly@gmail.com', (empty($name) ? 'Contact form' :$name));
   $mail->addAddress($to);
   $mail->addReplyTo($email,$name);
   $mail->Subject=$subject;
   $mail->Body=$message;
-  if(!$mail->send()) {
-    $msg = ['message'=>'Mailer Error: '. $mail->ErrorInfo ];
+  $mail->send();
+  $msg = ['status'=>200, 'message'=>'Message sent'];
   }
-  else{
-    $msg = ['status'=>200, 'message'=>'Message Sent'];
+  catch(Exception $e){
+    $msg = ['message'=>'Exception'.$e.'Mailer Error: '. $mail->ErrorInfo ];
   }
 }
 
