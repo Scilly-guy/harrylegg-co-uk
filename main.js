@@ -270,13 +270,14 @@ function displaySuccessfulEmail() {
     $('#name').val('');
     $('#email').val('');
     $('#message').val('');
-    var text = 'Your email was sent successfully.';
-    var chars = text.split('');
-    var i = 0;
-    var intervalId = setInterval(function () {
+    const text = 'Your email was sent successfully.';
+    const chars = text.split('');
+    let i = 0;
+    const intervalId = setInterval(function () {
         $('#message').val(text.substring(0,i));
         i++;            
     }, 50);
+    const clearThatInterval=setTimeout(function(){clearInterval(intervalId);},(chars.length+1)*55+250);
 }
 
 function convertRemToPixels(rem) {    
