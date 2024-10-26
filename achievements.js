@@ -39,6 +39,10 @@ document.getElementById('games')?.addEventListener('pointerdown', (event) => {
     achieve('gamer');
 });
 
+document.querySelectorAll('.gamer').forEach(link=>link.addEventListener('pointerdown', (event) => {
+    achieve('gamer');
+}));
+
 window.addEventListener('scroll', (event) => {
     achieve('scroller');
 });
